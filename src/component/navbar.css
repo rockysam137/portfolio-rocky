@@ -1,0 +1,103 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.Navbar{
+  height:4rem;
+  background-color:#d1d9e6;
+  width:100%;
+  position:sticky;
+  top:0;
+  }
+.N-wrapper{
+  justify-content:space-between;
+  display:flex;
+}
+.logo{
+  font-size:1.5rem;
+  color:slateblue;
+  margin:1.2rem 1rem;
+  z-index:2;
+}
+.list-menu{
+  display:flex;
+  position:relative;
+  margin-right:3rem;
+}
+li{
+  list-style:none;
+  margin-top:1.2rem;
+}
+.Link{
+  margin:1.2rem 1rem;
+  color:blueviolet;
+  text-decoration:none;
+  font-size:1.3rem;
+}
+.icon{
+  font-size:1.5rem;
+  display:none;
+  position:absolute;
+  top:1.5rem;
+  right:0;
+  margin-right:1.2rem;
+  color:slateblue;
+  z-index:2;
+}
+.sosmed_icon{
+  display:none;
+}
+
+@media Screen and (max-width:550px){
+  .list-menu{
+    position:absolute;
+    left:-100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#d1d9e6;
+    height:20rem;
+    width:100%;
+    z-index:1;
+    transition:all 0.5s ease;
+  }
+  .list-menu.active{
+    position:absolute;
+    left:0;
+
+  }
+  .Link{
+    color:slateblue;
+    font-size:1.5rem;
+  }
+  .icon{
+    display:block;
+    cursor:pointer;
+  }
+  /* .icon_sosmed.active{ */
+  /*   display:inline-flex; */
+  /*   position:absolute; */
+  /*   bottom:-15rem; */
+  /*   font-size:1.5rem; */
+  /*   z-index:5; */
+  /*   text-align:center; */
+  /* } */
+  .sosmed_icon{
+    display:inline-flex;
+    margin:1.2rem 1.5rem;
+    font-size:2.5rem;
+  }
+  .sos{
+    margin:0 1rem;
+    cursor:pointer;
+  }
+  .fa-facebook{
+    color:blue;
+  }
+  .fa-instagram{
+    color:#fa0276;
+  }
+  
+}

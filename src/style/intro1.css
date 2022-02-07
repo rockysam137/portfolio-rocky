@@ -1,0 +1,29 @@
+.Intro{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.I-wrapper{
+  display:block;
+}
+.rocky{
+  border-radius:50%;
+}
+.tile{
+  font-size:2.5rem;
+  color:#556369;
+  
+}
+.T-content{
+  color:#556369;
+  font-size:1.5rem;
+}
+@media Screen and (max-width:550px){
+  .tile{
+    font-size:1.5rem;
+  }
+  .T-content{
+    text-align:center;
+  }
+}
